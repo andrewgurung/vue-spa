@@ -2,14 +2,19 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 // import the vue instance
 import Vue from 'vue'
-// import the App components
+// import the App component
 import App from './App'
+// import the Hello component
+import Hello from './components/Hello'
 // import the vue router
 import VueRouter from 'vue-router'
 // tell vue to use the router
 Vue.use(VueRouter)
-//define your routes
-const routes = []
+// define your routes
+const routes = [
+  // define the root url of the Application
+  { path: '/', component: Hello }
+]
 
 // Create the router instance and pass the `routes` option
 // You can pass in additional options here.
