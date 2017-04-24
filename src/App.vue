@@ -1,5 +1,8 @@
 <template>
   <div id="app">
+    <!-- Use router-link to avoid page reload -->
+    <router-link v-bind:to="'/'">Home</router-link>
+    <router-link v-bind:to="'/about'">About</router-link>
     <!-- the router outlet where all matched components will be view -->
     <router-view></router-view>
   </div>
